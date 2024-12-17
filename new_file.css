@@ -1,0 +1,162 @@
+.animation1 div:nth-child(1){
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    -webkit-animation:a2 0.5s  infinite ;
+}
+.animation1 div:nth-child(2){
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    -webkit-animation:a2 0.5s  infinite ;
+}
+
+.animation1{
+    height: 156px;
+    width: 156px;
+    /* margin: 500px; */
+    background: url(./new_file/fox45.png);
+    -webkit-animation:aa2 2s steps(45) infinite ;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+@-webkit-keyframes a2{
+    100%{
+       background-position:7020px 0px;
+       transform: rotate(180deg);
+    }
+}
+@-webkit-keyframes aa2{
+    100%{
+       background-position:7020px 0px;
+    }
+}
+.animation{height: 100px;width: 100px ;
+    background-color: red;
+    /* animation: 动画名 动画时间 延迟时间 运动曲线 次数 是否反向 */
+    /* -webkit-animation: alternate */
+    /* linear 匀速；infinite无限循环;alternate反向 */
+    animation: aa 1s 0s alternate infinite forwards;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(0) scale(0);
+    }
+@-webkit-keyframes aa{
+    0%{
+
+    }
+    
+    /* 10%{ 
+        top: 200px;
+        left: 200px;
+        transform: rotate(180deg) scale(0);
+    }
+    40%{
+        top: 400px;
+        left: 400px;
+        transform: rotate(360deg) scale(1);
+    }
+    60%{
+        top: 800px;
+        left: 800px;
+        transform: rotate(720deg) scale(2);
+    }
+    80%{
+        top: 1600px;
+        left: 1600px;
+        transform: rotate(1440deg) scale(3);
+    } */
+    100%{
+        top: 200px;
+        left: 200px;
+        transform: rotate(2880deg) scale(3);
+    }
+}
+
+#firefly{
+    /* box-shadow: x轴偏移 y轴偏移 模糊值 延展值 颜色; */
+    box-shadow: 5px 5px 5px 5px #000;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 50px;
+    right: 0;
+}
+table{
+    background: color #00000121; ;
+}
+#six{
+    background-color: #ee260ce5;
+}
+.cl{
+    background-color: #16db16dc;
+}
+.badapple{
+    width: 310px;
+    border: 2px solid#000;
+    border-top:solid orange;
+    margin: auto;
+}
+.badapple1{
+    border:2px;
+    padding: 6px ;
+    border-top: dotted brown;
+}
+.badapple2,.badapple3{
+    border-top:2px dotted#000
+}
+.float1{
+    float: left;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border: 10px solid purple;
+    /* auto超出部分显示滚动条,清浮动 */
+    /* overflow: hidden; */
+    z-index: 2;
+}
+.float4{
+    float: right;
+    background-color: rgb(235, 10, 255);
+    width: 600px;
+    height: 600px;
+    border: 10px solid yellow;
+    z-index: 3;
+}
+.float3{
+    float: left;
+    background-color: rgb(240, 0, 0);
+    width: 100px;
+    height: 100px;
+    border: 10px solid yellow;
+}
+.float2{
+    /* float: left; */
+   /* 绝对定位，脱离文档流,根据父体是否定位元素去定位，如果不是，则逐层往上找，找到html为止 */
+    /* position:absolute; */
+    /* 相对定位，不脱离文档流，根据父级元素定位 */
+    position: relative;
+    top: 100px;
+    left:0;
+    right: 0;
+    /* bottom: 100px; */
+    width: 600px;
+    height: 600px;
+    border: 10px solid blue;
+    background-color: black;
+}
+
+textarea{
+    float: auto;
+    /* border: 10px solid yellowgreen; */
+
+}
+.weilei:link{color:red}
+.weilei:visited{color: rgb(21, 255, 0)}
+.weilei:hover{color: yellow}
+.weilei:active{color:aqua }
+.weilei{font-size: 2em}

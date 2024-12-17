@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CXK</title>
+		<link rel="stylesheet" href="new_file.css">
+		<style>
+		.weilei:link{color:red}
+		.weilei:visited{color: rgb(21, 255, 0)}	
+		.weilei:hover{color: yellow}
+		.weilei:active{color:aqua }
+		.weilei{font-size: 2em}
+		.firefly{
+			width: 146px;
+			height: 345.82px ;
+			border:3px solid#000;
+			padding: 10px;
+			margin: auto;
+			margin-top: 100px;
+			margin-bottom: 1000px;
+			 
+		}
+		.A{
+            width: 100px;
+            height: 10px;
+            border-left: 10px solid yellow;
+            border-top: 20px solid red;
+			border-bottom:40px #000;
+            border-right:30px solid blue;
+            /* margin: 5px solid#e70c0c; */
+            /* 外边距 */
+            margin: 100px;
+            padding: 5px;
+            background-color: aqua;
+			/* 声明块元素，block块元素，inline行元素，none非元素 */
+			display:none;
+        }
+        .B{
+            /* 上,右,下,左 /上下，左右/ 上，左右，下*/
+            margin: 50px ;
+            /* margin-left: 20PX; */
+            /* margin-right: 100px; */
+            /* margin-bottom: 60px; */
+            background-color: aqua;
+            border: 10px solid#000;
+            /* 边框圆角 */
+            border-radius: 100%;
+        }
+			/* 内联插入》内联头部》CSS外联 */
+			/* div:hover{background-color: aqua;} */
+			
+			/* 开头只能为字母 */
+			/* #a100{
+				background-color: brown;
+			} */
+			/* .first:hover,div:hover{
+				background-color: #55ffff;
+			}  */
+			.box{
+				/* content: ; */
+				/* border-color: #55ffff; */
+				/* border-width: 10px ; */
+				border:10px dashed#55ffff;
+				padding: 8px 10px;
+
+			}
+			.first{
+				/* 1em=16px */
+				/* font-size: 1em; */
+				/* font-family: '宋体',"楷体"; */
+				/* 是否斜体 */
+				/* font-style: italic; */
+				/* 正常斜体 */
+				/* font-style: normal; */
+				/* 加粗 */
+				/* font-weight: bold ; */
+				/* 更粗 */
+				/* font-weight: bolder; */
+				/* 不要使用逗号，字体样式，字体粗细，字体大小，字体类型，按照顺序，字体类型和大小必须要 */
+				font: italic 1em 'kaiti';
+				/* color:#cf1d1d */
+				/* color:rgb(241, 29, 29); */
+				/* 增加颜色透明度a */
+				color:rgba(192, 66, 66,255);
+				/* 文字内容删除线 */
+				/* text-decoration:line-through; */
+				line-height: 50px;
+				width: 2000px;
+				border:5px solid#6655ff;
+				height: 2000px;
+				/* 文本内容偏左left，偏右right，居中center */
+				/* text-align: left; */
+				/* 文本缩进，正值往右，负值往左 */
+				text-indent: -10px;
+				/* background: #55ffff; */
+				/* 当背景图无法占满时会重复， */
+				/* background-image: url(./作业0/萤门永存.jpg); */
+				/* 不重复 */
+				/* background-repeat: no-repeat; */
+				/* x轴或者y轴重复，repeat与y/x无空格 */
+				/* background-repeat: repeat-y; */
+				/* 背景图片位置移动往右移动纵坐标x，往下横坐标y */
+				/* background-position: 10px 50px; */
+				/* position:fixed ; */
+				/* background:color url() position repeat  必须要颜色和图片*/
+				background:gray url(./作业0/萤门永存.jpg)100px 10px no-repeat;
+				left:-1px;
+				top: -1px;
+				
+			}
+			.flash{
+				height: 37.5em;
+				width: 37.5em;
+
+			}
+			
+			.cl{
+				background-color: rgb(0, 0, 236);
+			}
+			#six{
+				background-color: aqua;
+			}
+			title{
+				color: #ff6955d7;
+			}
+			/* id设置 */
+			#awd{
+				background-color: blue;
+			}
+			/* 种类 */
+			/* ID选择器100>类选择器10>标签名选择器 1*/
+			.third:hover{
+				background-color:bisque;
+			}
+			/* 两个选择器优先级相同时，读取最后的选择 */
+			#three3:hover {
+				background-color: rgb(100, 237, 111);
+			}
+			#three3:hover {
+				background-color: rgb(237, 132, 100);
+			}
+			
+
+				/*父子选择  */
+			/* .first p { 
+				background-color:blue
+			} */
+			
+			/* p {  */
+				/* background-color: blueviolet; */
+			/* } */
+			
+			/* .first > .second {
+				color: #720862;
+			} */
+			
+			h1 + p {
+				background-color: chartreuse;
+			 }
+
+			/* div{
+				height: 20px;
+				border: 5px solid #5627f3;
+				width: 200px;
+			}
+			} */
+			/* h1 {color: #55ffff;} */
+			/* table {border:1px solid red} */
+			/* *{color: #7f8b1e;} */
+		</style>
+	</head>
+	<body>
+		<div class="animation1" >
+			<div style="top: 50px;left: 50px;">
+				background4
+			</div>
+			<div>
+				background3
+			</div >
+			<div style="top: 100px;left: 100px;">
+				background2
+			</div>
+			<div style="top: 150px;left: 150px;">
+				background1
+			</div>
+		</div>
+		<div style="" class="animation">
+		animation
+		</div>
+		<DIV style="height: 500px;"></DIV>
+		<!-- https://www.bilibili.com/video/BV15x4y1i7m9 -->
+		<a href="" id="weilei" target="_blank" >伪类</a>
+		<div id="firefly">
+			<img style="height: 50px;width: 50px;" src="./作业0/萤门永存.jpg" alt="">
+		</div>
+		<div class="float1"></div>
+		<div class="float2">
+			<div class="float3"></div>
+			<!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+		</div>
+		<div class="float4"></div>
+		<div class="badapple">
+			<h3>东方文果真报</h3>
+			<div class="badapple1">
+				<img src="Baka.gif" alt="无法加载图片">
+			</div>
+			<div class="badapple2" >GIF:Baka今日得分为9</div>
+			<div class="badapple3" >GIF:琪露诺的算数小课堂</div>
+			<div class="badapple4" style="border-top: dotted #000;">GIF:国士无双</div>
+		</div>
+		<div class="firefly">
+			<h2>新闻咨询</h2><br>
+			<img src="我将点燃星海.gif"><br>
+			<ul>
+				<li>我将点燃星海</li>
+				<li>飞萤扑火</li>
+			</ul>
+		</div>
+		
+
+		</div>
+		<div class="A"  >
+			111222333
+				</div>
+				<div class="B"  >
+					111222333
+				</div>
+		<div class="box">
+			小流萤
+		</div>
+		<br><br><br>
+		<div class="first" id="a100">
+			<p>123</p>
+			<P>
+				<p>456</p>
+			</P>
+		</div>
+		<br>
+		<div id="three3" class="third" width: 100px; height: 100px;>
+			div is id=003 
+		</div>
+		<embed src="./娑婆物语.swf" type="flashplay" id="flash" class="flash">
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<iframe src="https://ys.mihoyo.com/" frameborder="0" height="1000px" width="2000px"></iframe>
+		<iframe src="https://www.yuanshen.com/" frameborder="0" height="1000px" width="2000px"></iframe>
+		<iframe src="./作业0/index.html" frameborder="0" height="1000px" width="2000px"></iframe>
+		<video src="./作业0/流萤の秘密基地.mp4" muted autoplay loop height="100%" width="100%"></video>
+		<table border="1.5" id="six" cl="cl" style="background-color: red;">
+			<tr>
+				<th>cxk</th>
+				<td>123</td>
+			</tr>
+
+		</table>
+		<!-- <span id="003">span</span> -->
+		<!-- <span id="003">span</span> -->
+		<!-- <p id="003">pppp</p> -->
+		<!-- <p id="003">pppp</p> -->
+		<div class="he">
+			123
+		</div>
+		<div style="color: #55ffff;">
+			123
+		</div>
+		<div id="awd">
+			123
+		</div>
+		<div class="">
+			first
+			<p class="second">second</p>
+			<div>
+				<h1>h1</h1>
+				<p>p</p>
+				<p class="third">third </p>
+			</div>
+			<!-- <p>123</p> -->
+		</div>
+		
+
+		<img src="https://webstatic.mihoyo.com/upload/op-public/2021/10/09/870472d6104dbbe7ea18b27c13763ccb_5300916022261002498.png" width="100px" height="100x">
+		<img src="https://webstatic.mihoyo.com/upload/op-public/2021/10/03/4080f2eb748823d8c38507c3d7b69b36_936817768851375073.png" width="100px" height="100x"><br>
+		<!-- <iframe src="https://www.mihoyo.com" width="1000px" height="500px"></iframe> -->
+		<div>
+			<from action="https://www.baidu.com">
+				search,<input type="text"><br>
+				<input type="submit">
+			</from>
+
+		</div>
+		<div id="001">
+			<h1 id="002">your information</h1>
+			<form action="#">
+				name:<input type="text" ><br>
+				<input type="#"><br>
+				<!-- <input type="search"> -->
+				select:<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					</select><br>
+				radio:<input type="radio" value="1">1
+				<input type="radio" value="2">2
+				<input type="radio" value="3">3
+				<br>
+				checkbox<input type="checkbox">1
+				<input type="checkbox">2
+				<input type="checkbox">3
+				<br>
+				file<input type="file"><br>
+				data<input type="date"><br>
+				color<input type="color"><br>
+				submit<input type="submit"><br>
+				password<input type="password"><br>
+				<textarea style="resize: none;" name="123" id="004" cols="20" rows="10"></textarea>
+				<label for="1">reading 1</label>
+				<br><br>		
+			<span>123123</span>
+			<span>123123</span>
+		</div>
+		<br>
+		<a href="#002">tail</a>
+		<br>
+		<a id="000">id is 000</a>
+		<iframe src="index.html" width="150px" height="100px"></iframe>
+		<br>
+		<article>
+			<h2 id="002">123
+				<nav>
+					<ul>
+						<li>
+							<a href="index.html" target="_blank">cxk</a>
+						</li>
+					</ul>
+				</nav>
+		</article>
+		<a href="https://www.baidu.com">baidu</a>
+		<br>
+		<table border="1" width="1000px" hight="2000px">
+			<caption style="color: #55ffff; height: 100px;">title</caption strong >
+			<tr>
+				<!-- colspan跨列，rowspan跨行 -->
+				<th colspan="2">1</th>
+				<th rowspan="2">2</th>
+				<th>3</th>
+				<th>4</th>	
+			</tr>
+			<tr>
+				<td>123</td>
+				<td>456</td>
+				<td>456</td>
+				<td>456</td>	
+			</tr>
+			<tr>
+				<td>234</td>
+				<td>345</td>
+				<td>345</td>
+				<td>345</td>		
+			</tr>
+			</table>
+		<table  border="1" cellpadding="30" cellspacing="30">
+			<!-- cellpaddingd单元格与内容之间的距离，cellspacing单元格与单元格之间的距离 -->
+			<thead>
+				<!-- 居中并且加粗 -->
+				<th style="color: #55ffff;">1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<!-- 不在表格内 -->
+				<!-- <th1>4</th1> -->
+				<!-- 不居中 -->
+				<td>5</td> 
+			</thead>
+			<tbody>
+				<!-- 行 -->
+				<tr>
+					<!-- <每行的内容> --> 
+					<th>123</th>
+					<th>456</th>
+					<!-- th居中,td不居中 -->
+				</tr>
+				<tr>
+					<td>234</td>
+					<td>345</td>		
+				</tr>
+
+			
+			</tbody>
+			<p></p><p></p>
+		</table>
+		<p></p>
+		<a href="#">unknow</a>
+		<br><br>
+		<img src="123.png" width="1920px" height="1080x"> <p></p>
+		<a href="123.png">Download123.png</a>
+		<a href="https://www.bilibili.com" target="_blank">BILIBILI</a>
+		<strong>加粗</strong>
+		<b>加粗</b>
+		<em>斜体</em>
+		<del>删除线</del>
+		<s>删除线</s>
+		<ins >下横线</ins> 
+		<u>下横线</u>
+		<kbd>键盘输入</kbd>
+		<pre>预格式化文本</pre>
+		<small>加小</small>
+		<abbr>缩写</abbr>
+		<address>联系信息</address>
+		<bdo>文字方向</bdo>
+		<blockquote>从另一个源引用的部分</blockquote>
+		<cite>工作的名称</cite>
+		<sub>下标文档</sub>
+		<sup>上标文档</sup>
+
+
+		111111111111111<p></p>
+		1111111111111111
+		111111111111111<br>1111111111111111
+		<h1>123
+		</h1>
+		<h2>123</h2>
+		<h3>123</h3>
+		<ol>asddasfda123</ol>
+		<ol>有序
+			<li>第一</li>
+			<li>第二</li>
+		</ol>
+		<ul>
+			<li>111</li>
+			<li>222</li>
+			<li>333</li>
+		</ul>
+		<dl>111
+			<!-- <dir>123</dir> -->
+			<!-- 小标题 -->
+			<dt>123</dt>
+			<!-- 内容 -->
+			<dd>234</dd>
+		</dl>
+		
+		<!-- 表格 -->
+		<table>
+			<!-- 行 -->
+			<tr>
+				<!-- 表头 -->
+				<th>一月份</th>
+			</tr>
+			<tr>
+				<!-- 列 -->
+				<td>wcnm</td>
+				<td>我上早八</td>
+			</tr>
+		</table>
+		<!-- 水平线 -->
+		<hr>
+		<p>0.0.0.0</p>
+		<p>0.0.0.0</p>
+		<div>456456456</div>
+		<div>456456456</div>
+		<data>123123123</data>
+		<data>123123123</data>
+		<!-- 定义文档头部区域 -->
+		<header><!-- 定义头部语义 -->eyes，nose</header>
+		<footer><!-- 定义底部语义 -->foot</footer>
+		<article><!-- 定义文档独立内容区域 -->123123</article>
+		<!-- <span>无语义标签1</span>
+		<br>
+		<span>无语义标签2</span>
+		<span>无语义标签3</span>
+		 -->
+		<hr>
+		<a href="https://hyp-webstatic.mihoyo.com/hyp-client/hyp_cn_setup_1.1.4.exe">下载米哈游启动器</a>
+		<a href="HMCL.exe">DownloadHMCL</a>
+	</body>
+	<body id="id1">
+	<h1 >123</h1>
+	<P>123</P>	
+	<a href="#000">title</a>
+	<a href="#001">biaoge</a>
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1859652717&auto=1&height=66"></iframe>
+	</body>
+</html>

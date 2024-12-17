@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .Firefly{
+            width:100%;
+            height:100%;
+            position: fixed;
+            left:0;
+            top: 0;
+            /* object-fit:cover; */
+        }
+        table{
+            position: relative;
+            /* left: 20%;   */
+            /* display: flex; */
+        }
+        textarea{
+            background-color: #00000111;
+        }
+        input{
+            background-color: #00000111;
+        }
+        select{
+            background-color: #00000111;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Firefly</title>
+</head>
+<body>
+    <video autoplay muted loop class="Firefly" >
+        <source src="流萤の秘密基地.mp4" type="video/mp4" />
+    </video>
+    <table border="1.5"  width="1000px" align="center">
+        <tr>
+            <th colspan="3">个人资料</th>
+        </tr>
+        <tr>
+            <td>姓名：<input type="text" style="width: 200px;" ></td>
+            <td>性别：
+                <input name="sex" type="radio" >男<input name="sex" type="radio">女
+                <!-- <select style="width: 200px;" name="sex"> -->
+                    <!-- <option>男</option> -->
+                    <!-- <option>女</option> -->
+            </td>
+            <td rowspan="5">图片<a href="https://www.bilibili.com/video/BV15x4y1i7m9/" target="_blank">.</a>
+                <input type="file"><br>
+                <img src="萤门永存.jpg" height="400px" width="400px"></td>
+        </tr>
+        <tr>
+            <td>出生日期：<input type="date" style="width: 165px;"></td>
+            <td>学历：<select style="width: 200px;">
+                <option>无</option>
+				<option>小学</option>
+				<option>初中</option>
+				<option>高中</option>
+				<option>大专</option>
+                <option>本科</option>
+				<option>硕士</option>
+				<option>博士</option>
+                <option>其他</option>
+            </td>
+        </tr>
+        <tr>
+            <td>毕业学校：<input type="text"></td>
+            <td>专业：<input type="text" style="width: 200px;"></td>
+        </tr>
+        <tr>
+            <td>工作经验：<input type="text" ></td>
+            <td>现任职业：<input type="text" ></td>
+        </tr>
+        <tr>          
+            <td>申请职位：<input type="text" ></td>
+            <td>薪资要求：<input type="text" ></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 84px ;">联系方式：<textarea style="resize: none;" cols="145" rows="3"></textarea>
+                <!-- <input id="1" type="text" style="width:900px"></td> -->
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 84px;">工作经验：<textarea style="resize: none;" cols="145" rows="3"></textarea>
+                <!-- <input type="text" style="width:900px"></td> -->
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 84px;"> 职业技能：<textarea style="resize: none;" cols="145" rows="3"></textarea>
+                <!-- <input type="text" style="width:900px"></td> -->
+        </tr>
+        <tr>
+            <td colspan="3" style="height: 84px;"> 作品列表：<textarea style="resize: none;" cols="145" rows="3"></textarea>
+                <!-- <input type="text" style="width:900px"></td> -->
+        </tr>
+        <audio src="./Firefly.ogg" autoplay="true" loop="true" hidden="true">
+        <!-- <embed src="Firefly.ogg" type="audio"> -->
+    </table>
+    <!-- <input type="submit"> -->
+<!-- 流华易逝，烛萤常恒。星河为证，萤门永存。 -->
+</body>
